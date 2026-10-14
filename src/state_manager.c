@@ -45,12 +45,14 @@ MazeUIState *MazeUIState_Create() {
       .time_delay = TIME_DELAY_MS,
 
       .gen_algo = 0,
-      .gen_algo_names = {"Randomized DFS", "Randomized Prims",
-                         "Randomized Kruskals"},
+      .gen_algo_names = {"Randomized DFS",
+                         "Randomized Prims",
+                         /*"Randomized Kruskals"*/},
 
       .solve_algo = 0,
-      .solve_algo_names = {"Depth First Search", "Breadth First Search",
-                           "AStar"},
+      .solve_algo_names = {"Depth First Search",
+                           "Breadth First Search",
+                           /*"AStar"*/},
   };
 
   return mu;
@@ -170,10 +172,10 @@ void MazeContext_Event_GenerateMaze(MazeContext *ctx) {
     events = PrimsGen_Generate_MazeEvents(ctx->maze);
     break;
 
-  case GEN_KRUSKAL:
-    ctx->maze_ui_state->maze_mode = MAZE_BLANK;
-    return;
-    break;
+    // case GEN_KRUSKAL:
+    //   ctx->maze_ui_state->maze_mode = MAZE_BLANK;
+    //   return;
+    //   break;
 
   case TOTAL_GEN_ALGO:
     return;
@@ -214,10 +216,10 @@ void MazeContext_Event_SolveMaze(MazeContext *ctx) {
     events = BFSSolve_Generate_MazeEvents(ctx->maze);
     break;
 
-  case SOLVE_ASTAR:
-    ctx->maze_ui_state->maze_mode = MAZE_GENERATED;
-    return;
-    break;
+    // case SOLVE_ASTAR:
+    //   ctx->maze_ui_state->maze_mode = MAZE_GENERATED;
+    //   return;
+    //   break;
 
   case TOTAL_GEN_ALGO:
     return;

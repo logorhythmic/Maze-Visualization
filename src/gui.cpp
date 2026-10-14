@@ -358,8 +358,6 @@ void GUI_Draw_Frame(MazeUIState *ui, MazeContext *ctx) {
       ImGui::Separator();
       ImGui::Dummy(ImVec2(0.0f, 5.0f));
 
-      const char *solveAlgorithms[] = {"Depth First Search",
-                                       "Breadth First Search", "A Star"};
       static int currentSolveAlgo = 0;
 
       ImGui::SetNextItemWidth(-FLT_MIN);

@@ -30,14 +30,14 @@ typedef enum {
 typedef enum {
   GEN_DFS,
   GEN_PRIMS,
-  GEN_KRUSKAL,
+  // GEN_KRUSKAL,
   TOTAL_GEN_ALGO,
 } GenAlgo;
 
 typedef enum {
   SOLVE_DFS,
   SOLVE_BFS,
-  SOLVE_ASTAR,
+  // SOLVE_ASTAR,
   TOTAL_SOLVE_ALGO,
 } SolveAlgo;
 
