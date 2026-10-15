@@ -1,8 +1,11 @@
 # Maze Visualizer
+
+
+<img width="800" height="518" alt="Maze-Visualizer" src="https://github.com/user-attachments/assets/86397996-1fa8-442d-a167-3e183a44960a" />
+
 An interactive visualizer built in C to visually show how different algorithms generate and solve mazes.
 
 ## Demo
-<video src="https://github.com/user-attachments/assets/42d0abea-bc8c-4a91-8f2c-bfad14154612" autoplay loop muted playsinline width="100%"></video>
 [Maze Visualizer Web Demo](https://logorhythmic.github.io/Maze-Visualization/)
 
 ## Info
